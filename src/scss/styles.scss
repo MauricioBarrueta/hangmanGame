@@ -40,6 +40,11 @@ body {
                 margin-bottom: 10px;
                 font-size: 10px; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; color: #6B0504;                 
             }  
+            i {
+                margin-inline: 3px;
+                &:first-child { margin-left: 0; }
+                &:last-child { margin-right: 0; }
+            }
             .heart-active { color: crimson; }
             .heart-lost { color: #6B7280; }
         }
