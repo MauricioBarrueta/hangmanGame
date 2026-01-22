@@ -62,6 +62,15 @@ body .container .canvas-container span {
   letter-spacing: 2px;
   color: #6B0504;
 }
+body .container .canvas-container i {
+  margin-inline: 3px;
+}
+body .container .canvas-container i:first-child {
+  margin-left: 0;
+}
+body .container .canvas-container i:last-child {
+  margin-right: 0;
+}
 body .container .canvas-container .heart-active {
   color: crimson;
 }
