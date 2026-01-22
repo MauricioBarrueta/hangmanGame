@@ -26,7 +26,7 @@ body .container {
   background-color: #EEF0F2;
   color: #141414;
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 1em;
   text-align: center;
 }
 body .container p, body .container span {
@@ -37,42 +37,41 @@ body .container p, body .container span {
 body .container #title {
   width: 100%;
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   font-size: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1.5;
 }
-body .container #title img {
-  height: 24px;
-  margin-inline: 5px;
-}
 body .container #subtitle {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 2;
 }
 body .container .canvas-container {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 1em;
   border-top: 1px solid #141414;
 }
 body .container .canvas-container span {
   display: none;
   width: 100%;
-  margin: -5px 0 5px 0;
+  margin-bottom: 10px;
   font-size: 10px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
   color: #6B0504;
 }
-body .container .canvas-container canvas {
-  display: inline-block;
-  margin-bottom: -8px;
+body .container .canvas-container .heart-active {
+  color: crimson;
+}
+body .container .canvas-container .heart-lost {
+  color: #6B7280;
 }
 body .container #totalLetters {
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
+  padding-top: 0.5rem;
   border-top: 1px solid #141414;
 }
 body .container .word {
@@ -90,6 +89,12 @@ body .container .word .letter {
   margin-inline: 5px;
   line-height: 0.75;
 }
+body .container .word .letter:first-child {
+  margin-left: 0;
+}
+body .container .word .letter:last-child {
+  margin-right: 0;
+}
 body .container .hidden {
   display: inline-block;
   width: 15px;
@@ -100,18 +105,16 @@ body .container .hidden {
 body .container .used-letters {
   width: 100%;
   padding: 5px;
-  letter-spacing: 8px;
+  letter-spacing: 1px;
   font-size: 12px;
   color: #0D21A1;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  line-height: 1;
 }
 body .container .used-letters::before {
   content: "Letras ya utilizadas: ";
   margin-right: 10px;
-  letter-spacing: 1px;
   font-size: 14px;
   color: #011638;
 }
@@ -121,13 +124,14 @@ body .container .used-letters span {
   cursor: pointer;
 }
 body .container .used-letters span:hover {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bolder;
 }
 body .container .word-preview {
   font-size: 10px;
   letter-spacing: 1px;
   color: #141414;
+  margin: 5px 0;
 }
 body .container #playButton {
   width: 50%;
@@ -136,8 +140,10 @@ body .container #playButton {
   background-color: #0D21A1;
   color: #EEF0F2;
   font-size: 20px;
-  line-height: 1.75;
 }
 body .container #playButton:hover {
   background-color: #011638;
+}
+body .container #playButton i {
+  font-size: 18px;
 }/*# sourceMappingURL=styles.css.map */
