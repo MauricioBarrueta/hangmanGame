@@ -4,4 +4,5 @@
 
 🔗 https://mauriciobarrueta.github.io/hangmanGame/   
 
-![hangman](https://github.com/user-attachments/assets/17748f34-e8f1-4532-ae6e-499053dfdbf2)
+
+<img width="1366" height="653" alt="hangman" src="https://github.com/user-attachments/assets/16a43260-472a-42cf-92fa-d66bc9c67d23" />
